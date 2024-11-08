@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "f065338e-fed1-4580-b558-3d362306b22d",
+		"name": "Phase2Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39448439",
+		"_collection_link": "https://testingapi-8756.postman.co/workspace/Team-Workspace~b8b70558-231c-4c85-8a74-7f0a5bfbba8e/collection/39448439-f065338e-fed1-4580-b558-3d362306b22d?action=share&source=collection_link&creator=39448439"
+	},
+	"item": [
+		{
+			"name": "Section/sections",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/sql_wizards/section",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"sql_wizards",
+						"section"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Section/sections/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/sql_wizards/section/29",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"sql_wizards",
+						"section",
+						"29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"capacity\": 30,\r\n        \"cid\": 3,\r\n        \"mid\": 7,\r\n        \"roomid\": 22,\r\n        \"semester\": \"Spring\",\r\n        \"years\": \"2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/sql_wizards/section",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"sql_wizards",
+						"section"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSection",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/sql_wizards/section/29",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"sql_wizards",
+						"section",
+						"29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSection",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"capacity\": 5,\r\n    \"cid\": 3,\r\n    \"mid\": 14,\r\n    \"roomid\": 2,\r\n    \"semester\": \"Fall\",\r\n    \"years\": \"1960\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/sql_wizards/section/43",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"sql_wizards",
+						"section",
+						"43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TotalCountPerYear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "asdfghjkl",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/sql_wizards/section/year",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"sql_wizards",
+						"section",
+						"year"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
