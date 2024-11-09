@@ -1,0 +1,748 @@
+{
+	"info": {
+		"_postman_id": "b677fa6e-d3c5-4059-8831-3934b17e389a",
+		"name": "Collection",
+		"description": "Collection that contains every route used to create and test the REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39448439",
+		"_collection_link": "https://testingapi-8756.postman.co/workspace/TestingAPI-Workspace~87eb1419-beb9-4030-8dcc-f6d54937c6ed/collection/39448439-b677fa6e-d3c5-4059-8831-3934b17e389a?action=share&source=collection_link&creator=39448439"
+	},
+	"item": [
+		{
+			"name": "GetAllSections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/section",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"section"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSectionByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/section/9",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"section",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/section",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"section"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSection",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/section/9",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"section",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSectionById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/section/12",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"section",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TotalSectionCountPerYear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/section/year",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"section",
+						"year"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllRooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/room",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoomById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/room/18",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"room",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"building\": \"Test\",\r\n        \"capacity\": 77,\r\n        \"room_number\": \"777\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/room",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRoomById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/room/18",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"room",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateRoom",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"building\": \"Monzon\",\r\n    \"capacity\": 30,\r\n    \"room_number\": \"330\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/room/18",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"room",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopThreeRooms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/room/Stefani/capacity",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"room",
+						"Stefani",
+						"capacity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TopClassPerRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/room/22/classes",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"room",
+						"22",
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RoomRatioPerBuilding",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/room/Monzon/ratio",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"room",
+						"Monzon",
+						"ratio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRequisiteByClassidReqid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/requisite/36/37",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"requisite",
+						"36",
+						"37"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddRequisite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"classid\": 37,\r\n    \"prereq\": true,\r\n    \"reqid\": 37\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/requisite",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"requisite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllClasses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/class",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"class"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddClass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/class",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"class"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateRequisite",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"classid\": 6,\r\n    \"prereq\": true\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/requisite/5",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"requisite",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRequisiteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/requisite/5",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"requisite",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClassById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/class/2",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"class",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateClassbyId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/class/2",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"class",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClassById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/class/2",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"class",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top3Prerequisites",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/most/prerequisite",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"most",
+						"prerequisite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top3MostTaughtClasses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/classes/2020/Fall",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"classes",
+						"2020",
+						"Fall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Least3OfferedClasses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/least/classes",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"least",
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllMeetings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/meeting",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"meeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMeetingById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/meeting/20",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"meeting",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddMeeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/meeting",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"meeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMeetingById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/meeting/3",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"meeting",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMeeetingById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/meeting/8",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"meeting",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top5SectionTimes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-ravine-29781-90a379795404.herokuapp.com/sql_wizards/most/meeting",
+					"protocol": "https",
+					"host": [
+						"mighty-ravine-29781-90a379795404",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"sql_wizards",
+						"most",
+						"meeting"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
